@@ -15,4 +15,6 @@ interface WebService {
     @GET("pokemon/{name}")
     suspend fun getPokemonByName(@Path("name") name: String): Pokemon
 
+    @GET("pokemon/{id}")
+    suspend fun getPokemonById(@Path("id") id: String): Pokemon
 }

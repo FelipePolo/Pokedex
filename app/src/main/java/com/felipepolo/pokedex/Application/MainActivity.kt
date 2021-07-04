@@ -10,7 +10,7 @@ import com.felipepolo.pokedex.R
 import com.felipepolo.pokedex.databinding.ActivityMainBinding
 import dagger.android.support.DaggerAppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity() {
 
 
     private lateinit var binding: ActivityMainBinding

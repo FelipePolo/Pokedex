@@ -1,6 +1,8 @@
 package com.felipepolo.pokedex.ui.MainFragment.di
 
+
 import androidx.lifecycle.ViewModel
+import com.felipepolo.pokedex.Application.injection.Scopes.FragmentScope
 import com.felipepolo.pokedex.Presentation.MainViewModel
 import com.felipepolo.pokedex.domain.MainRepository
 import com.felipepolo.pokedex.domain.MainRepositoryInterface
@@ -10,6 +12,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import dagger.multibindings.IntoMap
+import javax.inject.Singleton
 
 @Module
 abstract class MainFragmentModule {
