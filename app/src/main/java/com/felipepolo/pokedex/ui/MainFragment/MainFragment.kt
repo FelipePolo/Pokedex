@@ -74,8 +74,8 @@ class MainFragment : DaggerFragment() {
         })
         binding.lLike.setOnClickListener {
             binding.lLike.playAnimation()
-            viewModel.getRandomPokemon()
             viewModel.saveFavoritePokemon()
+            viewModel.getRandomPokemon()
         }
         binding.lDislike.setOnClickListener {
             binding.lDislike.playAnimation()
